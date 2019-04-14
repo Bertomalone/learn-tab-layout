@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tab Layout</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- tab links -->
+    <div class="tab">
+        <button class="tab__tablinks" onclick="openCity(event, 'london')" id="defaultOpen">London</button>
+        <button class="tab__tablinks" onclick="openCity(event, 'paris')">Paris</button>
+        <button class="tab__tablinks" onclick="openCity(event, 'tokyo')">Tokyo</button>
+    </div>
+
+    <!-- tab content -->
+    <div id="london" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        <span class="tabcontent__close" onclick="this.parentElement.style.display='none'">x</span>
+    </div>
+
+    <div id="paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>London is the capital city of France.</p>
+        <span class="tabcontent__close" onclick="this.parentElement.style.display='none'">x</span>
+    </div>
+
+    <div id="tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>London is the capital city of Japan.</p>
+        <span class="tabcontent__close" onclick="this.parentElement.style.display='none'">x</span>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
